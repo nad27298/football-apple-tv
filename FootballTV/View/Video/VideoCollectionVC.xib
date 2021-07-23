@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="17156" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Rz2-K0-ksD" customClass="VideoCollectionVC" customModule="FootballTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VIdeoIMG" translatesAutoresizingMaskIntoConstraints="NO" id="0y6-kn-NKN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="346.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New beginnings, familiar sights - take a look at Liverpool's new training centre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdL-pB-dC9">
+                        <rect key="frame" x="0.0" y="346.5" width="600" height="103.5"/>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play" translatesAutoresizingMaskIntoConstraints="NO" id="yq0-2A-9nm">
+                        <rect key="frame" x="243" y="134.5" width="108" height="62.5"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PdL-pB-dC9" secondAttribute="trailing" id="1sH-b8-eq7"/>
+                <constraint firstItem="0y6-kn-NKN" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="4AE-Qz-uR1"/>
+                <constraint firstItem="yq0-2A-9nm" firstAttribute="width" secondItem="0y6-kn-NKN" secondAttribute="width" multiplier="0.18" id="SA8-0x-F1C"/>
+                <constraint firstItem="0y6-kn-NKN" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="Uaf-ZJ-I5b"/>
+                <constraint firstItem="yq0-2A-9nm" firstAttribute="centerY" secondItem="0y6-kn-NKN" secondAttribute="centerY" constant="-7.5" id="XRa-h5-SeI"/>
+                <constraint firstItem="yq0-2A-9nm" firstAttribute="height" secondItem="0y6-kn-NKN" secondAttribute="height" multiplier="0.18" id="bdt-ob-vdm"/>
+                <constraint firstAttribute="trailing" secondItem="0y6-kn-NKN" secondAttribute="trailing" id="dYI-wE-gAi"/>
+                <constraint firstAttribute="bottom" secondItem="PdL-pB-dC9" secondAttribute="bottom" id="duu-VP-YjU"/>
+                <constraint firstItem="0y6-kn-NKN" firstAttribute="height" secondItem="Rz2-K0-ksD" secondAttribute="height" multiplier="0.77" id="i8h-q4-6uD"/>
+                <constraint firstItem="yq0-2A-9nm" firstAttribute="centerX" secondItem="0y6-kn-NKN" secondAttribute="centerX" constant="-3" id="mjI-tO-oCQ"/>
+                <constraint firstItem="PdL-pB-dC9" firstAttribute="top" secondItem="0y6-kn-NKN" secondAttribute="bottom" id="t5y-hR-hCZ"/>
+                <constraint firstItem="PdL-pB-dC9" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="xWl-i8-hJK"/>
+            </constraints>
+            <connections>
+                <outlet property="imgHinh" destination="0y6-kn-NKN" id="K5z-G6-zkM"/>
+                <outlet property="lblTitle" destination="PdL-pB-dC9" id="1IQ-kB-ibp"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="VIdeoIMG" width="640" height="360"/>
+        <image name="ic_play" width="40" height="40"/>
+    </resources>
+</document>

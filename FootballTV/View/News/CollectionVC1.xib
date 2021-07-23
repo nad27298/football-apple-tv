@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="17156" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Rz2-K0-ksD" customClass="CollectionVC1" customModule="FootballTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="345"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeadlineIMG" translatesAutoresizingMaskIntoConstraints="NO" id="XQH-ih-kJj">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="241.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spain 6-0 Germany: Morata &amp; Co. book finals place as La Roja rout Germany" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-el-xF0">
+                        <rect key="frame" x="0.0" y="241.5" width="355" height="79.5"/>
+                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-11-17 21:35:41" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emU-ax-0PJ">
+                        <rect key="frame" x="0.0" y="321" width="200" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="ct9-Dw-1cA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment: 773" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-g3-RWu">
+                        <rect key="frame" x="200" y="321" width="155" height="24"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <constraints>
+                <constraint firstItem="XQH-ih-kJj" firstAttribute="height" secondItem="Rz2-K0-ksD" secondAttribute="height" multiplier="7/10" id="8X5-xD-JoL"/>
+                <constraint firstItem="XQH-ih-kJj" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="Cob-3D-xQ6"/>
+                <constraint firstAttribute="bottom" secondItem="emU-ax-0PJ" secondAttribute="bottom" id="IcP-8L-hfX"/>
+                <constraint firstItem="emU-ax-0PJ" firstAttribute="top" secondItem="rtt-el-xF0" secondAttribute="bottom" id="Iro-Z5-7Jr"/>
+                <constraint firstItem="ejq-g3-RWu" firstAttribute="top" secondItem="rtt-el-xF0" secondAttribute="bottom" id="J9L-sU-vrf"/>
+                <constraint firstItem="ejq-g3-RWu" firstAttribute="leading" secondItem="emU-ax-0PJ" secondAttribute="trailing" id="LD0-dP-5oo"/>
+                <constraint firstAttribute="trailing" secondItem="XQH-ih-kJj" secondAttribute="trailing" id="MSP-uD-uP9"/>
+                <constraint firstItem="rtt-el-xF0" firstAttribute="top" secondItem="XQH-ih-kJj" secondAttribute="bottom" id="ORs-Hy-3XK"/>
+                <constraint firstItem="rtt-el-xF0" firstAttribute="height" secondItem="Rz2-K0-ksD" secondAttribute="height" multiplier="2.3/10" id="Xfs-lk-Zg3"/>
+                <constraint firstItem="XQH-ih-kJj" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="Y1d-7V-7dN"/>
+                <constraint firstItem="rtt-el-xF0" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="gvb-Yh-D8n"/>
+                <constraint firstItem="emU-ax-0PJ" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="hDd-yg-rRF"/>
+                <constraint firstAttribute="trailing" secondItem="rtt-el-xF0" secondAttribute="trailing" id="kRX-bO-O4Z"/>
+                <constraint firstAttribute="bottom" secondItem="ejq-g3-RWu" secondAttribute="bottom" id="qUA-zf-1aq"/>
+                <constraint firstAttribute="trailing" secondItem="ejq-g3-RWu" secondAttribute="trailing" id="xrv-7r-UnR"/>
+            </constraints>
+            <connections>
+                <outlet property="imgHinh" destination="XQH-ih-kJj" id="q7E-Zl-h7Z"/>
+                <outlet property="lblComment" destination="ejq-g3-RWu" id="gCw-m4-a4y"/>
+                <outlet property="lblTime" destination="emU-ax-0PJ" id="egU-dj-LwS"/>
+                <outlet property="lblTitle" destination="rtt-el-xF0" id="kvS-vA-nd8"/>
+            </connections>
+            <point key="canvasLocation" x="174" y="-1"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HeadlineIMG" width="280" height="210"/>
+    </resources>
+</document>
